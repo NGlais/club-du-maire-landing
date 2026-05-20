@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" data-fr-scheme="system">
+    <head>
+        <meta charset="UTF-8">
+        <title>Landing page projet</title>
+        <!-- DSFR CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/dsfr.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/utility/icons/icons.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <script src="https://docs.getgrist.com/grist-plugin-api.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+    </head>
+    <body class="fr-theme-default">
+        <main role="main" class="fr-pt-6w fr-pb-8w">
+            <div class="fr-container">
+                <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-grid-row--center fr-my-1v">
+                <h1 id="h1" class="fr-hero__title"></h1>
+                </div>
+            </div>
+            <div class="fr-container-fluid fr-px-2w hero-wrapper">
+                <div class="fr-container">
+                    <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-grid-row--center fr-my-1v">
+                        <div class="fr-col-sm-7 fr-mb-4w fr-mb-md-0">
+                            <h2 id="hero_h2" class="fr-hero__title"></h2>
+                            <div id="hero_p"></div>
+                        </div>
+                        <div class="fr-col-sm-5 fr-mb-4w fr-mb-md-0 hero-image-col">
+                            <img id="hero_image" class="fr-responsive-img" alt="Image principale" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTENU sous le hero, centré dans un container -->
+            <div class="fr-container fr-mt-4w">
+                <!-- SECTION 1 -->
+                <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-grid-row--center fr-my-1v"> 
+                    <h3 id="section_1_h3" class="fr-h3"></h3>
+                    <div id="section_1_p" class="fr-col-10 fr-text--md"></div>  
+                </div>
+            </div>
+            <div class="fr-container fr-mt-4w">
+                <!-- SECTION 2 -->
+                <div class="fr-grid-row fr-grid-row--gutters fr-grid-row--middle fr-grid-row--center fr-my-1v">   
+                    <h3 id="section_2_h3" class="fr-h3"></h3>
+                    <div id="section_2_p" class="fr-col-10 fr-text--md"></div>
+                </div>
+            </div>
+        </main>
+        <!-- Scripts -->
+        <script src="./app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/dsfr.module.min.js" type="module"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/dsfr.nomodule.min.js" nomodule></script>
+    </body>
+</html>
