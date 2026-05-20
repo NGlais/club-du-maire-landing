@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentions légales</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            line-height: 1.7;
+            color: #1e1e1e;
+        }
+
+        h1 {
+            color: #000091;
+        }
+
+        h2 {
+            margin-top: 35px;
+            color: #000091;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Mentions légales</h1>
+
+<h2>Objet de la page</h2>
+
+<p>
+La présente page a pour objet de permettre l’inscription à des conférences et événements via un formulaire en ligne.
+</p>
+
+<p>
+Cette page est réalisée à l’aide de l’outil Grist et ne constitue pas un site internet commercial.
+</p>
+
+<h2>Responsable de publication</h2>
+
+<p>
+[Mairie du Vésinet]<br>
+[Adresse mail]
+</p>
+
+<h2>Hébergement</h2>
+
+<p>
+La page est hébergée via les services suivants :
+</p>
+
+<ul>
+    <li>Grist</li>
+    <li>GitHub Pages</li>
+</ul>
+
+<h2>Données personnelles</h2>
+
+<p>
+Dans le cadre des inscriptions aux conférences, les données suivantes peuvent être collectées :
+</p>
+
+<ul>
+    <li>nom,</li>
+    <li>prénom,</li>
+    <li>adresse électronique.</li>
+</ul>
+
+<p>
+Ces données sont utilisées exclusivement afin :
+</p>
+
+<ul>
+    <li>de confirmer l’inscription,</li>
+    <li>d’organiser l’accueil des participants,</li>
+    <li>de valider l’accès à la salle de conférence,</li>
+    <li>de transmettre des informations pratiques relatives à l’événement.</li>
+</ul>
+
+<p>
+Les données ne font l’objet d’aucune utilisation commerciale ni cession à des tiers.
+</p>
+
+<h2>Cookies</h2>
+
+<p>
+Cette landing page n’utilise pas de dispositif publicitaire ou de suivi marketing.
+</p>
+
+<h2>Responsabilité</h2>
+
+<p>
+Les informations diffusées sur cette page sont fournies à titre informatif.
+</p>
+
+<h2>Propriété intellectuelle</h2>
+
+<p>
+Les contenus présents sur cette page demeurent protégés par le droit de la propriété intellectuelle.
+</p>
+
+</body>
+</html>
