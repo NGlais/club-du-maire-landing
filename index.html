@@ -6,8 +6,6 @@
   <title>Le Club du Maire — Le Vésinet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/dsfr.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/utility/icons/icons.min.css">
   <style>
     :root {
       --navy: #1a2744;
@@ -15,11 +13,11 @@
       --gold-light: #d4b96a;
       --cream: #f8f5ef;
       --text: #2c2c2c;
-      --muted: #6b6b6b;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: "Lato", sans-serif; background-color: var(--cream); color: var(--text); }
 
+    /* HEADER */
     header {
       background-color: var(--navy);
       padding: 2.5rem 2rem 2rem;
@@ -34,7 +32,7 @@
       background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(184,151,58,0.04) 40px, rgba(184,151,58,0.04) 80px);
     }
     header img.logo {
-      max-height: 160px;
+      max-height: 240px;
       width: auto;
       position: relative;
       z-index: 1;
@@ -42,6 +40,7 @@
     }
     .gold-line { width: 60px; height: 2px; background: var(--gold); margin: 1.5rem auto 0; }
 
+    /* HERO */
     .hero { background: white; border-bottom: 1px solid rgba(26,39,68,0.1); }
     .hero-inner {
       max-width: 960px; margin: 0 auto; padding: 3rem 2rem;
@@ -52,10 +51,17 @@
       font-family: "Playfair Display", serif;
       font-size: 1.75rem; color: var(--navy); line-height: 1.4; margin-bottom: 1rem;
     }
-    .hero-text p { font-size: 1rem; color: var(--muted); font-style: italic; font-weight: 300; letter-spacing: 0.02em; }
+    .hero-text p {
+      font-size: 1rem;
+      color: var(--navy);
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
     .hero-image { flex-shrink: 0; }
     .hero-image img { width: 140px; height: auto; border-radius: 8px; box-shadow: 0 8px 32px rgba(26,39,68,0.15); }
 
+    /* MAIN */
     main { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 5rem; }
     .section-title {
       font-family: "Playfair Display", serif;
@@ -63,13 +69,30 @@
       padding-bottom: 0.75rem; border-bottom: 2px solid var(--gold); display: inline-block;
     }
 
-    .fr-callout { margin-bottom: 1.5rem; border-left: 4px solid var(--navy); background: white; }
-    .fr-callout--blue-france { border-left-color: #003189; }
-    .fr-callout--green-emeraude { border-left-color: #169b62; }
-    .fr-callout__title { font-family: "Lato", sans-serif !important; font-size: 1.05rem !important; font-weight: 700 !important; color: var(--navy) !important; }
-    .fr-callout a { color: var(--navy); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
-    .fr-callout a:hover { color: var(--gold); }
+    /* CALLOUTS */
+    .callout {
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--navy);
+      background: white;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 4px 4px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .callout--blue { border-left-color: #003189; }
+    .callout--green { border-left-color: #169b62; }
+    .callout--grey { border-left-color: #aaaaaa; }
+    .callout h3 {
+      font-family: "Lato", sans-serif;
+      font-size: 1.05rem; font-weight: 700; color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+    .callout a {
+      color: var(--navy); font-weight: 700;
+      text-decoration: underline; text-underline-offset: 3px;
+    }
+    .callout a:hover { color: var(--gold); }
 
+    /* FOOTER */
     footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.85rem; }
     footer a { color: var(--gold-light); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
@@ -77,6 +100,7 @@
     @media (max-width: 600px) {
       .hero-inner { flex-direction: column; text-align: center; gap: 1.5rem; }
       .hero-text h2 { font-size: 1.4rem; }
+      header img.logo { max-height: 180px; }
     }
   </style>
 </head>
@@ -102,34 +126,30 @@
   <main>
     <h2 class="section-title">Le Club du Maire</h2>
 
-    <div class="fr-callout">
-      <h3 class="fr-callout__title">✅ Pour s'inscrire à la prochaine conférence</h3>
+    <div class="callout">
+      <h3>✅ Pour s'inscrire à la prochaine conférence</h3>
       <p><a href="https://grist.incubateur.anct.gouv.fr/o/docs/df9oQa66FtDR/Le-Club-du-Maire/f/26" target="_blank">Accéder au formulaire d'inscription</a></p>
     </div>
 
-    <div class="fr-callout fr-callout--blue-france">
-      <h3 class="fr-callout__title">👤 Présentation de l'intervenant</h3>
-      <p><a href="https://fr.wikipedia.org/wiki/Ya%C3%ABl_Braun-Pivet" target="_blank">Voir la présentation de l'intervenant</a></p>
+    <div class="callout callout--blue">
+      <h3>👤 Présentation de l'intervenante</h3>
+      <p><a href="https://fr.wikipedia.org/wiki/Ya%C3%ABl_Braun-Pivet" target="_blank">Voir la présentation de l'intervenante</a></p>
     </div>
 
-    <div class="fr-callout">
-      <h3 class="fr-callout__title">⚡ Pour aller plus loin</h3>
-      <p><a href="https://adresse-du-site.fr" target="_blank">Consulter les ressources complémentaires</a></p>
+    <div class="callout">
+      <h3>⚡ Pour aller plus loin</h3>
+      <p><a href="https://www.buchetchastel.fr/catalogue/a-ma-place/" target="_blank">Consulter les ressources complémentaires</a></p>
     </div>
 
-    <div class="fr-callout fr-callout--green-emeraude">
-      <h3 class="fr-callout__title">⚖️ Mentions légales</h3>
-      <p><a href="https://NGlais.github.io/club-du-maire-landing/mentions-legales" target="_blank">Consulter les mentions légales</a></p>
+    <div class="callout callout--grey">
+      <h3>⚖️ Mentions légales</h3>
+      <p><a href="./mentions-legales.html" target="_blank">Consulter les mentions légales</a></p>
     </div>
   </main>
 
   <footer>
-    <p>© 2026 Le Club du Maire — Le Vésinet &nbsp;·&nbsp;
-      <a href="https://NGlais.github.io/club-du-maire-landing/mentions-legales">Mentions légales</a>
-    </p>
+    <p>© 2026 Le Club du Maire — Le Vésinet &nbsp;·&nbsp; <a href="./mentions-legales.html">Mentions légales</a></p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/dsfr.module.min.js" type="module"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.13.0/dist/dsfr.nomodule.min.js" nomodule></script>
 </body>
 </html>
